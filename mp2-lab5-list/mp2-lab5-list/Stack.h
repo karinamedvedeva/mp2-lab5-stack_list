@@ -87,22 +87,6 @@ public:
 		return false;
 	}
 
-	bool Full()
-	{
-		try
-		{
-			Pop();
-			if (!Pop())
-			{
-				throw 0;
-			}
-		}
-		catch (...)
-		{
-			return "Stack is full";
-		}
-	}
-
 	void Push(T a)
 	{
 		TLink<T>* tmp = new TLink<T>;

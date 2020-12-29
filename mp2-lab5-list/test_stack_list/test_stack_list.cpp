@@ -102,19 +102,6 @@ TEST(Stack, can_put_in_not_full_stack)
 	ASSERT_NO_THROW(bf.Push(2));
 }
 
-TEST(Stack, full_stack_return_true)
-{
-	Stack<int>bf;
-	bf.Push(2);
-	EXPECT_EQ(1, bf.Full());
-}
-
-TEST(Stack, can_check_that_stack_is_full)
-{
-	Stack<int>bf;
-	ASSERT_NO_THROW(bf.Full());
-}
-
 TEST(Stack, can_return_the_top)
 {
 	Stack<int>bf;
